@@ -1,0 +1,27 @@
+{
+  "name": "lemowaves-backend",
+  "version": "1.0.0",
+  "description": "Lemowaves AI — Secure Firebase Cloud Functions Backend",
+  "main": "index.js",
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^4.7.0",
+    "node-fetch": "^2.7.0",
+    "razorpay": "^2.9.2"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
