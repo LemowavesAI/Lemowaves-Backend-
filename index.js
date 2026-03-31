@@ -550,3 +550,12 @@ exports.cleanupExpiredOrders = functions.pubsub
     console.log(`Cleaned up ${snap.size} expired orders`);
     return null;
   });
+const PORT = process.env.PORT || 3000;
+
+app.get("/", (req, res) => {
+  res.send("Lemowaves backend is running 🚀");
+});
+
+app.listen(PORT, () => {
+  console.log("Server running on port " + PORT);
+});
