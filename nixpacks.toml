@@ -1,0 +1,4 @@
+[phases.build]
+cmds = ["npm install --production"]
+[start]
+cmd = "node index.js"
